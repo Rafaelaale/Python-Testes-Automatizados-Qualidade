@@ -1,0 +1,10 @@
+************* Module aula13_exemplo_pylint
+aulas\aula13_exemplo_pylint.py:18:0: C0327: Mixed line endings LF and CRLF (mixed-line-endings)
+aulas\aula13_exemplo_pylint.py:6:0: C0116: Missing function or method docstring (missing-function-docstring)
+aulas\aula13_exemplo_pylint.py:8:4: W0612: Unused variable 'temporario' (unused-variable)
+aulas\aula13_exemplo_pylint.py:12:0: C0116: Missing function or method docstring (missing-function-docstring)
+aulas\aula13_exemplo_pylint.py:3:0: W0611: Unused import math (unused-import)
+
+-----------------------------------
+Your code has been rated at 5.00/10
+

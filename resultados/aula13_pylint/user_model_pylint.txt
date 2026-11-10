@@ -1,0 +1,6 @@
+************* Module user_model
+burger-app\burguer-app\auth-service\models\user_model.py:18:0: C0304: Final newline missing (missing-final-newline)
+
+-----------------------------------
+Your code has been rated at 5.00/10
+

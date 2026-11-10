@@ -1,0 +1,9 @@
+AULA 14 - COMPARACAO PYLINT
+
+modelo: 5.00/10 -> 10.00/10
+config: 6.25/10 -> 10.00/10
+
+controller original: 7.08/10
+
+Arquivos originais preservados.
+Apenas copias didaticas foram corrigidas.

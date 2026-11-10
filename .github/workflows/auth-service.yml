@@ -1,0 +1,43 @@
+name: Teste Auth Service
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  test-auth-service:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./burger-app/burguer-app/auth-service
+
+    steps:
+      - name: Checkout de codigo
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+          python -m pip install pytest pytest-cov radon
+
+      - name: Executar testes automatizados
+        run: |
+          python -m pytest -v
+
+      - name: Analisar complexidade ciclomatica
+        run: |
+          python -m radon cc models/user_model.py -s
+
+      - name: Analisar cobertura de testes
+        run: |
+          python -m pytest -v --cov=models --cov=services --cov=config --cov=controllers --cov=utils --cov-report=term --cov-report=xml:coverage.xml --cov-report=html:coverage_html_report

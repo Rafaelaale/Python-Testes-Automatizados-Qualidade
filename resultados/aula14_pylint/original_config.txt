@@ -1,0 +1,8 @@
+************* Module auth-service.config.database
+config\database.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+config\database.py:19:0: C0116: Missing function or method docstring (missing-function-docstring)
+config\database.py:4:0: C0411: standard import "os" should be placed before third party import "pymongo.MongoClient" (wrong-import-order)
+
+-----------------------------------
+Your code has been rated at 6.25/10
+
